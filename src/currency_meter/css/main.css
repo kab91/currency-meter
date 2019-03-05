@@ -1,0 +1,13 @@
+#gridPane {
+    -fx-background-color: #000000;
+    -fx-border-color: #4c664a;
+}
+
+#refreshButton {
+   -fx-border: none;
+   -fx-background-color: #000;
+   -fx-background-image: url("../images/refresh.png");
+   -fx-background-size: 16 16;
+   -fx-background-repeat: no-repeat;
+   -fx-background-position: center;
+}

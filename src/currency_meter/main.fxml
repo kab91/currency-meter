@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency_meter.Controller">
+<GridPane id="gridPane" alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency_meter.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -19,32 +20,32 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Label text="USD/RUB">
+      <Label text="USD/RUB" textFill="#4c84be">
           <font>
               <Font name="Consolas" size="12.0" />
           </font>
       </Label>
-      <Label text="EUR/RUB" GridPane.rowIndex="1">
+      <Label text="EUR/RUB" textFill="#4c84be" GridPane.rowIndex="1">
           <font>
               <Font name="Consolas" size="12.0" />
           </font>
       </Label>
-      <Label fx:id="usdrubLabel" text="0.0000" GridPane.columnIndex="1">
+      <Label fx:id="usdrubLabel" text="0.0000" textFill="#4c84be" GridPane.columnIndex="1">
          <font>
             <Font name="Consolas" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="eurrubLabel" text="0.0000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+      <Label fx:id="eurrubLabel" text="0.0000" textFill="#4c84be" GridPane.columnIndex="1" GridPane.rowIndex="1">
           <font>
               <Font name="Consolas" size="12.0" />
           </font>
       </Label>
-      <Label fx:id="lastUpdateLabel" prefHeight="17.0" prefWidth="163.0" text="Last Update:" GridPane.rowIndex="2">
+      <Label fx:id="lastUpdateLabel" prefHeight="17.0" prefWidth="163.0" text="Last Update:" textFill="#b9b791" GridPane.rowIndex="2">
          <font>
             <Font name="Consolas" size="12.0" />
          </font>
       </Label>
-      <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#onRefreshButtonClick" text="Refresh" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <Button id="refreshButton" fx:id="refreshButton" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#onRefreshButtonClick" prefHeight="22.0" prefWidth="22.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
          <font>
             <Font name="Consolas" size="12.0" />
          </font>
@@ -53,4 +54,7 @@
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
    </padding>
+    <stylesheets>
+        <URL value="@css/main.css" />
+    </stylesheets>
 </GridPane>
