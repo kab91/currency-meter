@@ -1,14 +1,10 @@
 package currency_meter;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -38,7 +34,6 @@ public class Main extends Application {
         mainStage.setScene(new Scene(root, APP_WIDTH, APP_HEIGHT));
         mainStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
