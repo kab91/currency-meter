@@ -17,7 +17,7 @@ public class Main extends Application {
         final int APP_HEIGHT = 80;
         final int TOP_MARGIN = 20;
 
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("main.fxml"));
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
 
         primaryStage.initStyle(StageStyle.UTILITY);
